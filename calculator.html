@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section
+      class="w-[30%] mt-6 m-auto bg-white border border-gray-200 rounded-xl p-5 w-72 shadow-md"
+    >
+      <div class="mb-5">
+        <input
+          class="border w-[100%] p-6 h-23 text-black bg-gray-50 border border-gray-200 rounded-lg mr-5"
+          type="text"
+          placeholder="0"
+          id="output"
+        />
+      </div>
+
+      <div class="grid grid-cols-4 gap-6">
+        <button
+          onclick="clear_output()"
+          class="bg-white rounded-lg p-4 text-red-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          CE
+        </button>
+        <button
+          onclick="addInput('%')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          %
+        </button>
+        <button
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25"
+        >
+          X
+        </button>
+        <button
+          onclick="addInput('*')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          *
+        </button>
+        <button
+          onclick="addInput(7)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          7
+        </button>
+        <button
+          onclick="addInput(8)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          8
+        </button>
+        <button
+          onclick="addInput(9)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          9
+        </button>
+        <button
+          onclick="addInput('/')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          /
+        </button>
+        <button
+          onclick="addInput(4)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          4
+        </button>
+        <button
+          onclick="addInput(5)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          5
+        </button>
+        <button
+          onclick="addInput(6)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          6
+        </button>
+        <button
+          onclick="addInput('-')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          -
+        </button>
+        <button
+          onclick="addInput(1)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          1
+        </button>
+        <button
+          onclick="addInput(2)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          2
+        </button>
+        <button
+          onclick="addInput(3)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          3
+        </button>
+        <button
+          onclick="addInput('+')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          +
+        </button>
+        <button
+          onclick="addInput('.')"
+          class="bg-white rounded-lg p-4 text-blue-700 border border-gray-200 hover:bg-gray-200/2 transition-all duration-300"
+        >
+          .
+        </button>
+        <button
+          onclick="addInput(0)"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          0
+        </button>
+        <button
+          onclick="addInput('00')"
+          class="bg-white rounded-lg p-4 text-black border border-gray-200 hover:bg-gray-200/25 transition-all duration-300"
+        >
+          00
+        </button>
+        <button
+          onclick="calculate()"
+          class="bg-blue-800 rounded-lg p-4 text-white hover:bg-blue-900"
+        >
+          =
+        </button>
+      </div>
+
+      <script src="calculator.js"></script>
+    </section>
+  </body>
+</html>
