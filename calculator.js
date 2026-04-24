@@ -1,13 +1,13 @@
-let display = document.getElementById('output');
+let display = document.getElementById("calcScreen");
 
-function addInput(num){
-    display.value += num;
+function insertInput(num) {
+  display.value += num;
 }
 
-function calculate(){
-    display.value = eval(display.value);
+function calculate() {
+  display.value = eval(display.value);
 }
 
-function clear_output(){
-    display.value = ""
+function clear_calcScreen() {
+  display.value = "";
 }
