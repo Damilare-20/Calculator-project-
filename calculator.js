@@ -11,3 +11,8 @@ function calculate() {
 function clear_calcScreen() {
   display.value = "";
 }
+
+
+  function sliceInput() {
+    display.value = display.value.slice(0, -1);
+  }
